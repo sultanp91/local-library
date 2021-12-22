@@ -54,7 +54,7 @@
 
             <li>
               <a href="<%= val.url %>">
-                <%= val.book.title %> <%= val.imprint %> <% if(val.status ==
+                <%= val.book.title %> : <%= val.imprint %> - <% if(val.status ==
                 "Available"){ %>
                 <span class="text-success"><%= val.status %> </span>
                 <% } else if(val.status == "Maintenance"){ %>
@@ -62,7 +62,7 @@
                 <% } else { %>
                 <span class="text-danger"><%= val.status %> </span>
                 <% } if(val.status != "Available") { %>
-                <span>(Due: <%= val.due_back %> )</span>
+                <span>(Due: <%= val.due_back_formatted %> )</span>
                 <% } %>
               </a>
             </li>
