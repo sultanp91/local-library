@@ -1,5 +1,4 @@
 var BookInstance = require('../models/bookinstance');
-const { DateTime } = require('luxon');
 
 // Display list of all BookInstances.
 exports.bookinstance_list = function (req, res, next) {
