@@ -83,6 +83,16 @@
                 value="<%=undefined===author ? '' : author.date_of_birth %>"
               />
             </div>
+            <div class="form-group">
+              <label for="date_of_death">Date of birth: </label>
+              <input
+                id="date_of_death"
+                class="form-control"
+                type="date"
+                name="date_of_death"
+                value="<%=undefined===author ? '' : author.date_of_death %>"
+              />
+            </div>
             <button class="btn btn-primary" type="submit">Submit</button>
           </form>
           <% if(errors) { %>
