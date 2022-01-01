@@ -103,6 +103,8 @@ exports.book_create_get = function (req, res, next) {
         title: 'Create Book',
         authors: results.authors,
         genres: results.genres,
+        book: undefined,
+        errors: null,
       });
     }
   );
